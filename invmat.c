@@ -6,7 +6,7 @@ void commandLine(int argc, char const *argv[], char fileIn, char fileOut, int di
   int pos;
 
   pos = strcmp(*argv, "-e");
-  if(pos)
+  if(pos != -1)
     fileIn = argv[pos + 1];
 
   pos = strcmp(*argv, "-o");
